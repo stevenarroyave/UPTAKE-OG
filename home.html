@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="./home.html">
-        <img class="HeaderLogo" src="img/HeaderLogo.png" class="d-inline-block align-top" alt="">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!--- Nav var creation and styling --->
+      <a class="navbar-brand" href="./index.html"> <!--- linking the logo to the main page --->
+        <img class="HeaderLogo" src="img/HeaderLogo.png" class="d-inline-block align-top" alt=""> <!--- attatching and positioning logo --->
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
+      <div class="collapse navbar-collapse" id="navbarNav">  <!--- collapsing navbar when window resizing --->
+        <ul class="navbar-nav ml-auto"> <!--- creating navbar menu links --->
           <li class="nav-item active">
             <a class="nav-link" href="./home.html">LOGIN <span class="sr-only"></span></a>
           </li>
@@ -29,23 +29,23 @@
         </ul>
       </div>
 </nav>
-    <div name="xcontainer2" class="xcontainer2">    <!-- container for the home page  --->
-      <h2>We improve your professional life</h2><br>
-      <input type="text" placeholder="Job title, keywords...">
-      <input type="text" placeholder="Location">
-      <button>SEARCH</button>
-      <button data-toggle="modal" data-target="#exampleModal">POST</button>
+    <div name="xcontainer2" class="xcontainer2">    <!-- container for the header  --->
+      <h2>We improve your professional life</h2><br>  <!--- title --->
+      <input type="text" placeholder="Job title, keywords..."> <!--- search bar --->
+      <input type="text" placeholder="Location"> <!--- search bar --->
+      <button>SEARCH</button> <!--- search button --->
+      <button data-toggle="modal" data-target="#exampleModal">POST</button> <!--- post button --->
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid"> <!--- new container for the cards --->
       <div class="row align-items-start" id="row2">
         <div class="col-3">
-          <div class="card" id="filter">
-          		<header class="card-header">
+          <div class="card" id="filter"> <!--- filter section --->
+          		<header class="card-header"> <!--- filter title --->
           			<h6 class="title">Filter</h6>
           		</header>
-              <div class="card-body">
+              <div class="card-body"> <!--- filter content --->
                 <h5>Categories</h5>
-                <div class="form-group">
+                <div class="form-group"> <!--- categories filter --->
                   <select class="form-control" id="exampleFormControlSelect1">
                     <option hidden="">Select a category</option>
                     <option>Administration</option>
@@ -62,16 +62,16 @@
                     <option>Other</option>
                   </select>
                 </div><br>
-                <h5>Location</h5>
+                <h5>Location</h5> <!--- location text box --->
                 <div class="form-group">
                   <input class="form-control" type="text">
                 </div><br>
-                <h5>Distance</h5>
-                <div class="slidecontainer">
+                <h5>Distance</h5> <!--- distance filter --->
+                <div class="slidecontainer">  <!--- distance slider--->
                   <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
                   <p><span id="demo">50</span> kms</p>
                 </div><br>
-                <h5>Budget</h5>
+                <h5>Budget</h5> <!--- budget filter --->
                 <div class="row" id="maxmin">
                   <div class="column">
                     <input type="text" id="name" name="name" requiredminlength="4" maxlength="8" size="5">
@@ -81,7 +81,7 @@
                     <input type="text" id="name" name="name" requiredminlength="4" maxlength="8" size="5">
                   </div>
                 </div><br>
-                <h5>Date</h5>
+                <h5>Date</h5> <!--- date filter --->
                 <div class="form-group">
                   <select class="form-control" id="exampleFormControlSelect1">
                     <option hidden="">Select a date</option>
@@ -97,12 +97,12 @@
               </div>
           </div>	 <!-- card-body.// -->
         </div> <!-- card.// -->
-        <div class="col-9"> <!---New post--->
+        <div class="col-9"> <!---New post card--->
           <div class="card-columns" id="cards">
-             <div class="card" data-toggle="modal" data-target="#postModal">
-               <img id="postpic" class="card-img-top w-100" src="./img/Posts/1.jpg" alt="Card image cap">
+             <div class="card" data-toggle="modal" data-target="#postModal"> <!--- attatching new-post modal to the card --->
+               <img id="postpic" class="card-img-top w-100" src="./img/Posts/1.jpg" alt="Card image cap"> <!--- header image --->
                <div class="card-body">
-                 <h5 class="card-title">Photographer</h5>
+                 <h5 class="card-title">Photographer</h5> <!--- card content --->
                  <p class="card-text">Lifestyle</p> <hr>
                  <p class="card-text">30mins - 1h / 3 days a week<br>£7 - hour</p><hr>
                  <div id="propic" class="row">
@@ -257,22 +257,22 @@
       </div>
     </div>
     <div>
-      <div name="loadmore"  class="row">
-          <div class="col-5 mx-auto">
-                <button id="loadmore">LOAD MORE</button>
+      <div name="loadmore"  class="row"> <!--- Load more section --->
+          <div class="col-5 mx-auto"><!--- button positioning --->
+                <button id="loadmore">LOAD MORE</button> <!--- load more button --->
           </div>
       </div>
     </div>
 <!--- footer here --->
 <footer>
-  <div class="col-sm-12 text-left">
-    <div class="row pt-5">
+  <div class="col-sm-12 text-left"> <!--- new five column foooter --->
+    <div class="row pt-5"> <!--- new row 5 columns --->
       <div class="col-sm-7 five-three">
-        <div class="row align-items-start">
+        <div class="row align-items-start"> <!--- aligning items to the top of the column --->
           <div class="col-sm-4">
-            <img id="logo" class="logo" src="img/FooterLogo.png">
+            <img id="logo" class="logo" src="img/FooterLogo.png"> <!--- attatching footer logo --->
           </div>
-          <div class="col-sm-4 text-left">
+          <div class="col-sm-4 text-left"> <!--- aligning text to the left --->
             <h5 class="text mb-4 pt-0">UPTAKE</h5>   <!-- column title -->
             <ul class="list-inline mb-0">  <!--  setting the column style  -->
               <li class="list-inline-item">
@@ -326,36 +326,36 @@
         </div><!-- end inner row -->
       </div>
     </div><!-- end outer row -->
-    <div class="row">
+    <div class="row" id="footer"> <!--- new row for the social media icons section --->
       <div class="col-12 text-right">
         <hr>
-        <ul class="nav justify-content-end">
+        <ul class="nav justify-content-end"> <!--- new nav bar aligning items to the left --->
           <li class="nav-item">
             <span>Follow us!</span>
           </li>
+          <li class="nav-item"> <!--- social media logos --->
+            <a class="nav-link" href="#">
+              <i class="fab fa-facebook-f"></i> <!--- linking icons --->
+            </a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="#">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <i class="fab fa-twitter"></i>
+              <i class="fab fa-twitter"></i> <!--- linking icons --->
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link disabled" href="#">
-              <i class="fab fa-google-plus-g"></i>
+              <i class="fab fa-google-plus-g"></i> <!--- linking icons --->
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link disabled" href="#">
-              <i class="fab fa-youtube"></i>
+              <i class="fab fa-youtube"></i> <!--- linking icons --->
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link disabled" href="#">
-              <i class="fab fa-instagram"></i>
+              <i class="fab fa-instagram"></i> <!--- linking icons --->
             </a>
           </li>
         </ul>
@@ -366,18 +366,18 @@
 
 
 <!--- new post modal -->
-<div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> <!--- new large modal for new post  --->
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <i class="fas fa-store-alt" id="headerFas"></i>
-        <h5 class="modal-title" id="exampleModalLabel">Post your ad on Uptake</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <i class="fas fa-store-alt" id="headerFas"></i> <!--- giving id to header logo to restyle it --->
+        <h5 class="modal-title" id="exampleModalLabel">Post your ad on Uptake</h5> <!--- header text --->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <!--- close button --->
           <span aria-hidden="false">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <div class="form-group">
+        <div class="form-group"> <!--- body form --->
           <input id="modalinput" class="form-control" type="text" placeholder="What service do you need?">
         </div>
         <hr>
@@ -413,7 +413,7 @@
           </div>
         </div>
       </div>
-      <div class="modal-footer">
+      <div class="modal-footer"> <!--- modal footer --->
         <p>By posting, you confirm that this listing complies with Uptake's Commerce<br>Policies and all applicable laws. Learn more.<p>
         <button id="loadmore" type="button" class="btn btn-primary">POST</button>
       </div>

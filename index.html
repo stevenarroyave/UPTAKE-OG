@@ -8,17 +8,17 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">
-        <img class="HeaderLogo" src="img/HeaderLogo.png" class="d-inline-block align-top" alt="">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!--- Nav var creation and styling --->
+      <a class="navbar-brand" href="./index.html"> <!--- linking the logo to the main page --->
+        <img class="HeaderLogo" src="img/HeaderLogo.png" class="d-inline-block align-top" alt=""> <!--- attatching and positioning logo --->
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
+      <div class="collapse navbar-collapse" id="navbarNav">  <!--- collapsing navbar when window resizing --->
+        <ul class="navbar-nav ml-auto"> <!--- creating navbar menu links --->
           <li class="nav-item active">
-            <a class="nav-link" href="#">LOGIN <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">LOGIN</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">SIGN UP</a>
@@ -29,24 +29,23 @@
         </ul>
       </div>
 </nav>
-    <div name="xcontainer" class="xcontainer">    <!-- container for the home page  --->
-      <input type="text" placeholder="Job title, keywords...">
-      <input type="text" placeholder="Location">
+    <div name="xcontainer" class="xcontainer">    <!-- container for the header page  --->
+      <input type="text" placeholder="Job title, keywords...">  <!--- search bar --->
+      <input type="text" placeholder="Location">  <!--- search bar --->
       <a href="./home.html"><button>SEARCH</button></a> <!---search buttons  --->
-      <!-- <button>Search</button> -->
-      <h1>Hiring made simple. </h1>
+      <h1>Hiring made simple. </h1> <!--- header text content --->
       <h2>Need work done? It's easy. Simply post a job <br> you need completed and receive offers from <br> competent candidates.</h2><br>
-      <button type="1" data-toggle="modal" data-target="#exampleModal">POST YOUR AD</button>
+      <button type="1" data-toggle="modal" data-target="#exampleModal">POST YOUR AD</button> <!--- POST button launching modal for "New post" --->
     </div>
-    <section class="postAdArea">
-        <div class="row">
-            <div class="col-12">
-                <h3>Posting your ad is easier than ever!</h3>
+    <section class="postAdArea">  <!--- first section of website --->
+        <div class="row"> <!--- new row --->
+            <div class="col-12"> <!--- one column for section title  --->
+                <h3>Posting your ad is easier than ever!</h3> <!--- title --->
             </div>
-            <div class="col-7">
+            <div class="col-7"> <!--- column 1 for the post picture --->
               <img id="post" src="img/Post.png"></img>
             </div>
-            <div class="col-5">
+            <div class="col-5"> <!--- column 2 for instructions --->
               <h4>Post your ad in two minutes</h4>
               <h5>Just fill in the details of the job you <br> want to advertise.</h5>
               <h4>Receive applications from<br>thousands of candidates</h4>
@@ -56,36 +55,36 @@
             </div>
         </div>
     </section>
-    <section class="statsArea">
+    <section class="statsArea"> <!--- second section of the site --->
         <div class="row">
-            <div class="col-5 mx-auto">
-                <h1 class="text-center">
-                  <h3>Sectors with the most opportunities. Join now!</h3>
+            <div class="col-5 mx-auto"> <!--- new centered column for the section title --->
+                <h1 class="text-center">  <!--- centering the text --->
+                  <h3>Sectors with the most opportunities. Join now!</h3> <!--- section title --->
                 </h1>
             </div>
         </div>
-        <div class="stats">
-          <div class="row">
+        <div class="stats"> <!--- stats section --->
+          <div class="row"> <!--- new row with 4 columns for the stats --->
               <div class="col-3">
-                <i class="fas fa-laptop"></i>
+                <i id="SectorsIcon" class="fas fa-laptop"></i> <!--- attatching icon --->
                 <h5>IT & TELECOMS</h5>
                 <h6>7178</h6>
                 <h5>SEE OFFERS</h5>
               </div>
               <div class="col-3">
-                <i class="fas fa-stethoscope"></i>
+                <i id="SectorsIcon" class="fas fa-stethoscope"></i> <!--- attatching icon --->
                 <h5>HEALTH</h5>
                 <h6>1858</h6>
                 <h5>SEE OFFERS</h5>
               </div>
               <div class="col-3">
-                <i class="fas fa-tools"></i>
+                <i id="SectorsIcon" class="fas fa-tools"></i> <!--- attatching icon --->
                 <h5>CONSTRUCTION</h5>
                 <h6>7346</h6>
                 <h5>SEE OFFERS</h5>
               </div>
               <div class="col-3">
-                <i class="far fa-id-card"></i>
+                <i id="SectorsIcon" class="far fa-id-card"></i> <!--- attatching icon --->
                 <h5>SERVICES</h5>
                 <h6>610</h6>
                 <h5>SEE OFFERS</h5>
@@ -97,14 +96,14 @@
 
 <!--- footer here --->
 <footer>
-  <div class="col-sm-12 text-left">
-    <div class="row pt-5">
+  <div class="col-sm-12 text-left"> <!--- new five column foooter --->
+    <div class="row pt-5"> <!--- new row 5 columns --->
       <div class="col-sm-7 five-three">
-        <div class="row align-items-start">
+        <div class="row align-items-start"> <!--- aligning items to the top of the column --->
           <div class="col-sm-4">
-            <img id="logo" class="logo" src="img/FooterLogo.png"></img>
+            <img id="logo" class="logo" src="img/FooterLogo.png"></img> <!--- attatching footer logo --->
           </div>
-          <div class="col-sm-4 text-left">
+          <div class="col-sm-4 text-left"> <!--- aligning text to the left --->
             <h5 class="text mb-4 pt-0">UPTAKE</h5>   <!-- column title -->
             <ul class="list-inline mb-0">  <!--  setting the column style  -->
               <li class="list-inline-item">
@@ -158,36 +157,36 @@
         </div><!-- end inner row -->
       </div>
     </div><!-- end outer row -->
-    <div class="row">
+    <div class="row" id="footer"> <!--- new row for the social media icons section --->
       <div class="col-12 text-right">
         <hr>
-        <ul class="nav justify-content-end">
+        <ul class="nav justify-content-end"> <!--- new nav bar aligning items to the left --->
           <li class="nav-item">
             <span>Follow us!</span>
           </li>
+          <li class="nav-item"> <!--- social media logos --->
+            <a class="nav-link" href="#">
+              <i class="fab fa-facebook-f"></i> <!--- linking icons --->
+            </a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="#">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <i class="fab fa-twitter"></i>
+              <i class="fab fa-twitter"></i>  <!--- linking icons --->
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link disabled" href="#">
-              <i class="fab fa-google-plus-g"></i>
+              <i class="fab fa-google-plus-g"></i>  <!--- linking icons --->
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link disabled" href="#">
-              <i class="fab fa-youtube"></i>
+              <i class="fab fa-youtube"></i>  <!--- linking icons --->
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link disabled" href="#">
-              <i class="fab fa-instagram"></i>
+              <i class="fab fa-instagram"></i>  <!--- linking icons --->
             </a>
           </li>
         </ul>
@@ -252,7 +251,7 @@
 </div>
 <!--- new post modal end --->
 
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> <!--- jqery cdn --->
   <script src="js/bootstrap.bundle.min.js"></script>  <!-- bootstrap compiled and minified CSS   -->
 
 </body>

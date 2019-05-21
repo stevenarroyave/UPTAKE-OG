@@ -445,7 +445,11 @@ hr{
   margin-bottom: 0px;
 }
 
-
+#SectorsIcon{
+  color: #1a253b;
+  font-size: 20px;
+  margin-top: 0px;
+}
 
 #modalinput{
   border: none;
